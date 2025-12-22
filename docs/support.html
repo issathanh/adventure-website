@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Adventure Support - Get help with your account, purchases, and more">
+    <title>Support - My Adventure</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span>📖 My Adventure</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="support.html">Support</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <h1>Support Center</h1>
+            <p class="page-subtitle">Get help with My Adventure</p>
+
+            <!-- Contact Section -->
+            <section class="section contact-section">
+                <h2>Contact Us</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>📧 Email:</strong>
+                        <a href="mailto:youradventuresp@gmail.com">youradventuresp@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>⏱️ Response Time:</strong>
+                        Within 24 hours (usually much faster)
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="section faq-section" id="faq">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq-category">
+                    <h3>Getting Started</h3>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>How do I create my first story?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>1. Open the YourAdventure app</p>
+                            <p>2. Tap "Create New Story"</p>
+                            <p>3. Describe your character (e.g., "A brave knight searching for a dragon")</p>
+                            <p>4. Wait a few seconds for the AI to generate your story opening</p>
+                            <p>5. Make choices to continue your adventure!</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>What makes a good character description?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Great character descriptions include:</p>
+                            <ul>
+                                <li>Who they are (a young wizard, a curious cat, etc.)</li>
+                                <li>What they're doing or looking for</li>
+                                <li>Keep it family-friendly and age-appropriate</li>
+                            </ul>
+                            <p><strong>Examples:</strong></p>
+                            <ul>
+                                <li>"A friendly robot learning about human emotions"</li>
+                                <li>"A magical unicorn protecting an enchanted forest"</li>
+                                <li>"A curious mouse on a quest for the world's best cheese"</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h3>Credits & Purchases</h3>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>How do credits work?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>My Adventure uses a simple credit system:</p>
+                            <ul>
+                                <li><strong>1 credit = 1 story scene generation</strong></li>
+                                <li><strong>1 credit = forking (remixing) a public story</strong></li>
+                                <li>Each scene includes narration, artwork, and choices</li>
+                                <li>Credits never expire</li>
+                                <li>Available in packs of 100 and 1000 credits</li>
+                                <li>FREE actions: viewing stories, liking, commenting, following</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>How do I purchase credits? (For App Store Reviewers)</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p><strong>⚠️ IMPORTANT: Credit balance is in the TOP-LEFT corner</strong></p>
+                            <p>To access in-app purchases:</p>
+                            <p>1. Open the app and sign in</p>
+                            <p>2. Look at the <strong>TOP-LEFT corner</strong> of the screen</p>
+                            <p>3. <strong>TAP the credit balance pill/counter</strong></p>
+                            <p>4. A modal will open showing available credit packs:</p>
+                            <ul>
+                                <li>100 Credit Pack (com.yourstory.app.v2.credit_100)</li>
+                                <li>1000 Credit Pack (com.yourstory.app.v2.credit_1000)</li>
+                            </ul>
+                            <p>5. Select a pack and complete the purchase through the App Store</p>
+                            <p>6. Credits appear in your account immediately</p>
+                            <p><strong>Alternative:</strong> The purchase modal also appears automatically when you try
+                                to fork a story without enough credits.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>How do I restore my purchases?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>If you've purchased credits but they're not showing:</p>
+                            <p>1. Go to Settings (gear icon)</p>
+                            <p>2. Tap "Restore Purchases"</p>
+                            <p>3. Your credits will be restored within a few seconds</p>
+                            <p><strong>Note:</strong> Make sure you're signed in with the same Apple ID used for the
+                                purchase.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>Can I get a refund?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Refunds are handled through Apple. See our <a href="refunds.html">Refund Policy</a> for
+                                details.</p>
+                            <p><strong>Technical Issues:</strong> If you experienced a technical error that prevented
+                                story generation, we may refund the affected credits. Contact youradventuresp@gmail.com
+                                with
+                                details.</p>
+                            <p><strong>Content Policy Violations:</strong> Credits used for inappropriate prompts are
+                                non-refundable.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>Do credits expire?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No! Your credits never expire. Use them whenever you want to create stories.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h3>Using the App</h3>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>How do story choices work?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>After each scene, you'll see 2-3 choices. Selecting a choice costs 1 credit and generates
+                                the next scene based on your selection. Each story can go in many different directions!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>Can I save my stories?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! All your stories are automatically saved. Access them from the "My Stories" tab at
+                                any time.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>Can I turn off image generation?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! When creating or continuing a story, toggle the "Generate Images" option. This
+                                doesn't affect the credit cost - it's still 1 credit per scene.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>Why was my prompt rejected?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>My Adventure uses automated content filtering powered by AI to ensure stories are
+                                family-friendly. Prompts containing violence, inappropriate content, or adult themes
+                                will be rejected.</p>
+                            <p><strong>Note:</strong> When a prompt is rejected, 1 credit is still deducted to cover the
+                                content checking cost and discourage inappropriate use.</p>
+                            <p><strong>AI Limitation:</strong> Our filtering system uses AI and may occasionally reject
+                                appropriate content or miss subtle issues. This is a limitation of automated systems.
+                                Use your discretion and try rephrasing if needed.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>How long does it take to generate a scene?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Most scenes generate in 5-15 seconds. Image generation may take an additional few
+                                seconds. Generation time depends on server load and your internet connection.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h3>Account & Privacy</h3>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>How do I delete my account?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>To delete your account and all associated data:</p>
+                            <p>1. Contact youradventuresp@gmail.com</p>
+                            <p>2. Request account deletion</p>
+                            <p>3. We'll process your request within 7 days</p>
+                            <p><strong>Note:</strong> This action is permanent and cannot be undone. All stories and
+                                unused credits will be lost.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>What data do you collect?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We collect minimal data necessary to provide the service. See our <a
+                                    href="privacy.html">Privacy Policy</a> for complete details.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>Is YourAdventure safe for children?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>My Adventure is designed with safety in mind and includes:</p>
+                            <ul>
+                                <li>Multi-layer content filtering on all prompts</li>
+                                <li>AI content moderation systems</li>
+                                <li>Moderated social features</li>
+                                <li>No third-party advertising</li>
+                                <li>COPPA compliant (ages 13+)</li>
+                            </ul>
+                            <p><strong>Important:</strong> All content is AI-generated. While we use advanced filtering,
+                                no automated system is perfect. We recommend parental supervision and encourage parents
+                                to review generated content. AI may occasionally produce unexpected results or errors.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h3>Social Features</h3>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>How do I make my story public?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>From your story details screen, tap "Share Publicly" and add a description and tags. Your
+                                story will appear in community feeds and search results. You can make it private again
+                                at any time.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>What is story forking?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Forking lets you create your own version of someone else's public story. The original
+                                creator is credited, and you can take the story in a new direction. Think of it like
+                                remixing!</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>Can I delete my comments or public stories?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! You can delete your comments and public stories at any time from your profile or the
+                                story screen. Deletion is permanent and cannot be undone.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>How do I report inappropriate content?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Tap the "..." menu on any public story or comment and select "Report." Our team reviews
+                                all reports within 24 hours. Users who violate our community guidelines may have their
+                                accounts suspended.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>Who can see my profile information?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Your profile (username, bio, follower counts) is visible to all My Adventure users. Your
+                                private stories are never visible to anyone but you. You can make your profile private
+                                in Settings.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h3>Purchase Troubleshooting</h3>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>I don't see any credit packs available</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>If credit packs aren't showing up:</p>
+                            <ol>
+                                <li>Make sure you're on a real iOS device (not simulator)</li>
+                                <li>Products may take 4-6 hours to propagate in Apple's sandbox environment</li>
+                                <li>Check that your Apple ID is valid for purchases</li>
+                                <li>Try tapping the credit balance in the top-left corner again</li>
+                                <li>Restart the app and try again</li>
+                            </ol>
+                            <p>If the issue persists, contact youradventuresp@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>Purchase completed but credits didn't appear</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>If your purchase completed but credits aren't showing:</p>
+                            <ol>
+                                <li>Pull down to refresh the credit balance</li>
+                                <li>Force close and reopen the app</li>
+                                <li>Tap "Restore Purchases" in settings</li>
+                                <li>Wait a few minutes - processing can take time</li>
+                                <li>Check your Apple receipt to confirm purchase went through</li>
+                            </ol>
+                            <p>If credits still don't appear after 15 minutes, contact youradventuresp@gmail.com with
+                                your Apple receipt</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>Can't find the purchase button</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p><strong>The purchase button is NOT in settings!</strong></p>
+                            <p>To purchase credits:</p>
+                            <ol>
+                                <li>Look at the <strong>TOP-LEFT corner</strong> of the screen</li>
+                                <li>You'll see your credit balance (e.g., "50 credits")</li>
+                                <li><strong>TAP the credit balance</strong></li>
+                                <li>A modal will open with purchase options</li>
+                                <li>Tap "Add credits" to see credit packs</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h3>AI & Language Features</h3>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>What languages does YourAdventure support?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>My Adventure can generate stories in multiple languages! Simply write your character
+                                description in your preferred language, and the AI will generate the story in that
+                                language.</p>
+                            <p><strong>Note:</strong> Story quality may vary by language. English typically produces the
+                                most consistent results, but we support many languages including Spanish, French,
+                                German, Italian, Portuguese, Japanese, Korean, Chinese, and more.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>How accurate are AI-generated stories?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p><strong>Important:</strong> All stories are created by artificial intelligence and have
+                                limitations:</p>
+                            <ul>
+                                <li><strong>Not human-written:</strong> Stories are generated by AI, not written by
+                                    professional authors</li>
+                                <li><strong>May contain errors:</strong> AI can make factual mistakes, grammatical
+                                    errors, or logical inconsistencies</li>
+                                <li><strong>Quality varies:</strong> Some stories will be better than others</li>
+                                <li><strong>Unexpected content possible:</strong> Despite filtering, AI may occasionally
+                                    generate surprising or inappropriate content</li>
+                                <li><strong>Use discretion:</strong> We recommend parents review content and supervise
+                                    their children's use</li>
+                            </ul>
+                            <p>We continuously improve our AI and filtering systems, but no automated system is perfect.
+                                Report any issues to youradventuresp@gmail.com.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>Why was inappropriate content generated?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We sincerely apologize if you encountered inappropriate content. We use multiple layers
+                                of AI-powered content filtering, but no automated system can catch 100% of issues.</p>
+                            <p><strong>What we do:</strong></p>
+                            <ul>
+                                <li>Filter prompts before story generation</li>
+                                <li>Use family-friendly AI models</li>
+                                <li>Monitor and improve our systems continuously</li>
+                            </ul>
+                            <p><strong>If you encounter inappropriate content:</strong> Please report it to
+                                youradventuresp@gmail.com with details so we can improve our filters. We take these
+                                reports seriously and use them to enhance our safety systems.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h3>Troubleshooting</h3>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>The app won't load my stories</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Try these steps:</p>
+                            <ol>
+                                <li>Check your internet connection</li>
+                                <li>Close and reopen the app</li>
+                                <li>Sign out and sign back in</li>
+                                <li>Update to the latest app version</li>
+                            </ol>
+                            <p>If the issue persists, contact youradventuresp@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>My credits aren't showing after purchase</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>1. Wait 1-2 minutes for processing</p>
+                            <p>2. Close and reopen the app</p>
+                            <p>3. Try "Restore Purchases" in Settings</p>
+                            <p>4. If still missing after 5 minutes, contact youradventuresp@gmail.com with your purchase
+                                receipt</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>Story generation failed - did I lose a credit?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>If story generation fails due to a technical error, your credit is automatically
+                                refunded. Check your credit balance to confirm.</p>
+                            <p>If you believe a credit was incorrectly charged, contact youradventuresp@gmail.com with
+                                details.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>The app crashes or freezes</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>1. Make sure you're running the latest version</p>
+                            <p>2. Restart your device</p>
+                            <p>3. Reinstall the app (your data is saved to the cloud)</p>
+                            <p>4. If crashes continue, email youradventuresp@gmail.com with your device model and iOS
+                                version</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Still Need Help -->
+            <section class="section help-section">
+                <h2>Still Need Help?</h2>
+                <p>Can't find what you're looking for? We're here to help!</p>
+                <div class="help-cta">
+                    <a href="mailto:youradventuresp@gmail.com" class="btn btn-primary">Contact Support</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>YourAdventure</h4>
+                    <p>Creating magical AI-powered stories for children</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="support.html">Help Center</a></li>
+                        <li><a href="support.html#faq">FAQ</a></li>
+                        <li><a href="mailto:youradventuresp@gmail.com">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="refunds.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 YourAdventure. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
